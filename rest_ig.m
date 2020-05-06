@@ -158,7 +158,7 @@ if size(allPositions.positions,1) > 0
 end
 
 %% Browse Sprint Market
-marketBrowse = IG_api('MarketBrowse','302308');
+marketBrowse = IG_api('MarketBrowse','298158');
 for m = 1:size(marketBrowse.markets,2)
     disp([ marketBrowse.markets{m}.epic ' | ' marketBrowse.markets{m}.marketStatus ]);
 end

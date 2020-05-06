@@ -156,7 +156,9 @@ if strcmp(method, 'GET')
     url = [url body];
     body = '';
 end
-
+url = strrep(url,' ','%20')
+disp(url)
+disp(header)
 [output,extras] = urlread2(url, method, body, header);
 [out json] = parse_json(output);
 if size(out,1) > 0
